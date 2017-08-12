@@ -14,7 +14,7 @@ $(document).ready(function() {
         
         //send to formspree
         $.ajax({
-            url:'https://formspree.io/jdmwoods@gmail.com',
+            url:'https://formspree.io/jdmwoods@googlemail.com',
             method:'POST',
             data:{
                 name:name,
