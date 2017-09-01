@@ -68,7 +68,7 @@
         
         <div id="contactform">
             
-            <form class="form" id="contact-form" name="contactform">
+            <form class="form" id="contact-form">
                     <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" required/>
                 
                 <p class="email">
@@ -143,14 +143,14 @@
 <script src="../js/top.js"></script>
 <script src="../js/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCK-NUTe6y459evIW5k7ZxNauH32cdwoO0"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
 
 <script>
 
 $("#contactform").validate({
   submitHandler: function(form) {
     $.ajax({
-      url: "//formspree.io/info@joshuawoods.uk", 
+      url: "http://formspree.io/jdmwoods@gmail.com", 
       method: "POST",
       data: {
         name: $(form).find("input[name='name']").val(),
