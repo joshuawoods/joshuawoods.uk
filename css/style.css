@@ -942,6 +942,10 @@ input:focus, textarea:focus {
 	padding-left: 50px;
 }
 
+.footer2 {
+	padding-left: 50px;
+}
+
 .location {
 	text-align: left;
 }
@@ -971,6 +975,7 @@ input:focus, textarea:focus {
 		width: 100%;
 		margin-bottom: 0;
 		text-align: left;
+		padding-left: 50px;
 	}
 
 	.top {
@@ -983,5 +988,8 @@ input:focus, textarea:focus {
 		width: 49%;
 		margin-bottom: 0;
 		text-align: left;
+	}
+	.copyright {
+		padding-left: 50px;
 	}
 }
