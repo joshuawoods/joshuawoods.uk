@@ -931,14 +931,15 @@ input:focus, textarea:focus {
 }
 
 .logofooter {
-	width: 27px;
+	width: 30px;
 	position: absolute;
 	margin-left: -6px;
+	margin-top: 2px;
         float: left;
 }
 
 .footer1 {
-	padding-left: 35px;
+	padding-left: 50px;
 }
 
 .location {
