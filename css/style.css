@@ -930,8 +930,19 @@ input:focus, textarea:focus {
 	line-height: 1.3em;
 }
 
+.logofooter {
+	width: 27px;
+	position: absolute;
+	margin-left: -6px;
+        float: left;
+}
+
+.footer1 {
+	padding-left: 30px;
+}
+
 .location {
-	padding-left: 5px;
+	padding-left: 3px;
 	text-align: left;
 }
 
