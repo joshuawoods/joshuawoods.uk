@@ -924,7 +924,7 @@ input:focus, textarea:focus {
 	border-top: 1px solid rgba(220,220,220,0.8);
 	color: rgb(170,170,170);
 	font-size: 0.9em;
-    margin-top: 30px;
+        margin-top: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	line-height: 1.3em;
@@ -934,17 +934,19 @@ input:focus, textarea:focus {
 	width: 30px;
 	position: absolute;
 	margin-left: -6px;
-	margin-top: 2px;
+	margin-top: 3px;
         float: left;
 }
 
 .footer1 {
-	padding-left: 50px;
+	padding-left: 65px;
 }
 
-.footer2 {
-	padding-left: 50px;
-}
+@media only screen and (min-width: 551px) and (max-width: 950px) {
+	.footer2 {
+		padding-left: 65px;
+	}
+}	
 
 .location {
 	text-align: left;
@@ -975,7 +977,7 @@ input:focus, textarea:focus {
 		width: 100%;
 		margin-bottom: 0;
 		text-align: left;
-		padding-left: 50px;
+		padding-left: 65px;
 	}
 
 	.top {
