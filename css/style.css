@@ -942,7 +942,7 @@ input:focus, textarea:focus {
 	padding-left: 65px;
 }
 
-@media only screen and (min-width: 551px) and (max-width: 950px) {
+@media only screen and (max-width: 550px) {
 	.footer2 {
 		padding-left: 65px;
 	}
@@ -992,6 +992,6 @@ input:focus, textarea:focus {
 		text-align: left;
 	}
 	.copyright {
-		padding-left: 50px;
+		padding-left: 65px;
 	}
 }
