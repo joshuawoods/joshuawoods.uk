@@ -7,20 +7,33 @@
 <title>Drag and Drop Demo</title>
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+		<link rel="stylesheet" type="text/css" href="simplegrid.css" />
+    
 <style>
 .draggable, .droppable {
-  border: 1px dashed #000;
-  width: 150px;
-  height: 150px;
   background-color: #fff;
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
+
+}
+    
+
+			.content {
+				background: #ccc;
+			}
+
+    
+    img {
+	max-width: 100%;
+    height: auto;
 }
 
 .droppable {
   border-color: #31b03d;
-  padding: 5px 2px;
+  width: 100%;
 }
 
 .draggable.clone {
@@ -28,8 +41,6 @@
 }
 
 .droppable.big {
-  height: 60px;
-  width: 100px;
 }
 
 .droppable.big .droppable {
@@ -44,22 +55,27 @@
   background-color: #3498db;
 }
 
-.droppable .draggable {
-  width: 150px;
-  height: 150px;
-  margin: 0 3px;
+.holding .droppable .draggable {
+  width: 50px;
+  height: 50px;
   font-size: 10px;
   padding: 2px;
 }
+
+.droppable .draggable {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  padding: 2px;
+}    
+    
 ul.list, ul.grid {
   list-style-type: none;
   padding: 0;
-  width: 162px;
 }
 
 ul.grid.wide {
-  width: 100%;
-  height: 200px;
+
 }
 
 ul.grid.active {
@@ -68,63 +84,303 @@ ul.grid.active {
 
 ul.list li, ul.grid li {
   border: 1px solid #DCDBDD;
-  margin: 2px;
-  padding: 2px 5px;
+
   background-color: #F6F5F7;
   box-sizing: border-box;
   vertical-align: top;
 }
 
 ul.list li {
-  height: 28px;
 }
 
 ul.grid li {
-  float: left;
-  height: 150px;
-  width: 150px;
 }
+    
+
 
 ul.list li.placeholder, ul.grid li.placeholder {
   border-style: dashed;
   background-color: transparent;
 }
 body { background-color: #fafafa; font-family: 'Open Sans'; }
-.container { margin: 150px auto; }
+
 </style>
 </head>
 
 <body>
+    
+    
+    
+<div class="grid grid-pad">
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
 
-  <div class="container">
-
-<h2>Images</h2>
-<ul class="grid wide">
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-  <li class="draggable"><img src="Example.jpg"></li>
-</ul>
-      
-<br>
-
-<div align="center">
-<div>&nbsp;</div>
-<br>
-<div class="droppable"></div>  
-<br>
-<div class="droppable"></div>
-<div class="droppable"></div>
-<br>
-<div class="droppable"></div>
-<div class="droppable"></div>
-<div class="droppable"></div>
 </div>
-      
-  </div>
+    
+<div class="grid grid-pad">
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+
+</div>
+    
+<div class="grid grid-pad">
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+    <div class="col-1-12">
+        <div class="content">
+            <img class="draggable" src="example.jpg">
+        </div>
+    </div>
+
+</div>
+    
+
+<div class="container grid grid-pad">
+    <div class="col-4-12 holding">
+        <div class="droppable" style="height:125px;"></div>
+    </div>
+    <div class="col-4-12 holding">
+        <div class="droppable" style="height:125px;"></div>
+    </div>
+    <div class="col-4-12 holding">
+        <div class="droppable" style="height:125px;"></div>
+    </div>
+</div>
+
+<div class="container grid grid-pad">
+    <div class="col-5-12"></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-6-12"></div>
+</div>
+
+<div class="container grid grid-pad">
+    <div class="col-4-12"></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-5-12"></div>
+</div>
+
+<div class="container grid grid-pad">
+    <div class="col-3-12"></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-4-12"></div>
+</div>
+    
+<div class="container grid grid-pad">
+    <div class="col-2-12"></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-3-12"></div>
+</div>
+
+<div class="container grid grid-pad">
+    <div class="col-1-12"></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-2-12"></div>
+</div>
+    
+<div class="container grid grid-pad">
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"><div class="droppable" style="height:75px;"></div></div>
+    <div class="col-1-12"></div>
+</div>
+    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="touch-dnd.js"></script>
 <script type="text/javascript">
