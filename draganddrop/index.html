@@ -49,9 +49,17 @@
   float: right;
 }
 
-.droppable.active {
+.droppable.agree.active {
   background-color: #abe2a5;
 }
+
+.droppable.neutral.active {
+  background-color: #cccccc;
+}
+
+.droppable.disagree.active {
+  background-color: #ffcccc;
+} 
 
 .droppable.drop-here {
   background-color: #3498db;
@@ -354,13 +362,13 @@ html {
 
 <div class="container grid grid-pad" style="margin-bottom: 50px;">
     <div class="col-4-12 holding">
-        <div class="droppable" style="min-height:125px;"></div>
+        <div class="droppable agree" style="min-height:125px;"></div>
     </div>
     <div class="col-4-12 holding">
-        <div class="droppable" style="min-height:125px;"></div>
+        <div class="droppable neutral" style="min-height:125px;"></div>
     </div>
     <div class="col-4-12 holding">
-        <div class="droppable" style="min-height:125px;"></div>
+        <div class="droppable disagree" style="min-height:125px;"></div>
     </div>
 </div>
 
