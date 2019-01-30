@@ -458,7 +458,12 @@ html {
     <div class="col-2-12" style="text-align: right;">Most Relevant &rarr;</div>
     <div class="col-1-12"></div>
 </div>	
-    
+
+<form action="post">
+  <input type="text" id="Img1Position" name="ImgPosition1" value="0">
+  <input type="submit" onclick="f1()" value="Submit">
+</form>	
+	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="touch-dnd.js"></script>
 
@@ -468,6 +473,12 @@ $(function(){
   console.log($('#img1').parents('.query').attr('id'));
   console.log($('#img1').closest('.query').attr('id'));
 });
+</script>
+	
+<script>
+function f1() {
+  document.getElementById("Img1Position").value=($('#img1').parent().attr('id'));
+}
 </script>
 	
 <script type="text/javascript">
