@@ -484,16 +484,19 @@ html {
 
 
 <div class="container grid grid-pad" style="margin-bottom: 75px;">
-    <div class="col-9-12" style="text-align: left;">&larr; Least Relevant</div>
-    <div class="col-2-12" style="text-align: right;">Most Relevant &rarr;</div>
+    <div class="col-8-12" style="text-align: left;">&larr; Least Relevant</div>
+    <div class="col-3-12" style="text-align: right;">Most Relevant &rarr;</div>
     <div class="col-1-12"></div>
 </div>	
 
-	<div><h1>Click Here to finish and submit your list &rarr;</h1></div>
-	
-<div id="contactform">
-	
-<form action="https://formspree.io/jdmwoods@gmail.com" method="POST">
+<div class="container grid grid-pad">
+	<div class="col-6-12" style="text-align: right;">
+		<h1>
+			Click Here to finish and submit your sorted list &rarr;
+		</h1>
+	</div>
+	<div class="col-6-12" style="text-align: left;">
+	<form action="https://formspree.io/jdmwoods@gmail.com" method="POST">
   <input type="hidden" id="Img1Position" name="Img1Position" value="0">
   <input type="hidden" id="Img2Position" name="Img2Position" value="0">
   <input type="hidden" id="Img3Position" name="Img3Position" value="0">
@@ -532,11 +535,7 @@ html {
   <input type="hidden" id="Img36Position" name="Img36Position" value="0">
   <input type="submit" onclick="f1()" value="Submit"/>
 </form>
-
-</div>
-	
-<div id="thankyouBlock" class="success">
-    <h3>Thank you for your time. This has been successfully sent.</h3>
+	</div>
 </div>
 	
 <script src="jquery-2.1.4.min.js"></script>
