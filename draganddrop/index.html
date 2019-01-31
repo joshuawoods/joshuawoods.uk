@@ -497,6 +497,8 @@ html {
 	</div>
 	<div class="col-6-12" style="text-align: left;">
 	<form action="https://formspree.io/jdmwoods@gmail.com" method="POST">
+  
+  <input type="hidden" id="userid" name="userid" value="0">
   <input type="hidden" id="Img1Position" name="Statement1Position" value="0">
   <input type="hidden" id="Img2Position" name="Statement2Position" value="0">
   <input type="hidden" id="Img3Position" name="Statement3Position" value="0">
@@ -542,7 +544,17 @@ html {
 <script src="touch-dnd.js"></script>
 	
 <script>
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+	
+<script>
 function f1() {
+  $("#userid").val(getParameterByName("phone"));
   document.getElementById("Img1Position").value=($('#img1').parent().attr('id'));
   document.getElementById("Img2Position").value=($('#img2').parent().attr('id'));
   document.getElementById("Img3Position").value=($('#img3').parent().attr('id'));
